@@ -22,3 +22,8 @@ console.group("union");
 let unionSet = numberSet.union(numberSet2);
 unionSet.forEach(v => console.log(v));
 console.groupEnd("union");
+
+const numbers = [1,1,2,2,2,4,5,5];
+console.log("Initial numbers: ", numbers);
+const uniqueNumbers = [...new Set(numbers)];
+console.log("Unique numbers: ", uniqueNumbers);
